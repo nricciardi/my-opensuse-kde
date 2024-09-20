@@ -12,5 +12,8 @@
 - System Sounds: **Ocean**
 - Splash Screen: **openSUSE**
 
-## Dolphin
+## TODO
 
+- Gestures
+- Disable touchpad when mouse is plugged in
+- Fingerprint
