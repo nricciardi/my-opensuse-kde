@@ -1,5 +1,20 @@
 # My OpenSUSE KDE Plasma 6
 
+## Partitions
+
+200 GB for root (`/`) and its subdirectories as Btrfs partition.
+
+465 GB for `/home` as Btrfs partition.
+
+37 GB (having 32 GB of RAM) as Swap partition (it is used to hibernate the system).
+
+
+## Third-parts repositories
+
+- **Packman**
+- **Nvidia**
+
+
 ## KDE Plasma 6
 
 - Global Theme: **Breeze Dark**
