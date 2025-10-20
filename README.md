@@ -1,12 +1,22 @@
 # My OpenSUSE KDE Plasma 6
 
+## Installation notes
+
+### Black screen
+
+Use `nomodeset` and then remove it, otherwise trouble during resolution setup.
+
+### Nvidia
+
+Do not add third-part repositories during installation.
+
+Follow [this](https://en.opensuse.org/SDB:NVIDIA_drivers) to install NVIDIA drivers. `zypper install-new-recommends` worked. When you reboot, you must reach secure boot.
+
 ## Partitions
 
-200 GB for root (`/`) and its subdirectories as Btrfs partition.
+Only one root partition.
 
-465 GB for `/home` as Btrfs partition.
-
-37 GB (having 32 GB of RAM) as Swap partition (it is used to hibernate the system).
+38 GB (having 32 GB of RAM) as Swap partition (it is used to hibernate the system).
 
 
 ## Third-parts repositories
@@ -22,12 +32,19 @@
 - Application Style: **Breeze**
 - Plasma Style: **Breeze**
 - Window Decorations: **Monochrome Blur**
-- Icons: **Tela yellow dark**
+- Icons: **Tela Manjaro dark**
+- Color: `#097969`
 - Cursors: **Bibata Modern Ice**
 - System Sounds: **Ocean**
 - Splash Screen: **openSUSE**
 
-## .profile
+## Zsh
+
+Thema: `bira`
+
+## Bash
+
+### .profile
 
 ```
 alias ls='_ls --color=auto'
@@ -38,7 +55,7 @@ alias cls='clear'
 # export PATH=$PATH:/opt/anaconda3/bin
 ```
 
-## .bashrc
+### .bashrc
 
 ```
 source ~/.profile
